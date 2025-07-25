@@ -1,5 +1,6 @@
 import 'package:doctor_app/core/routing/routes.dart';
 import 'package:doctor_app/features/home/ui/home_screen.dart';
+import 'package:doctor_app/features/onboarding/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -8,8 +9,8 @@ class AppRouter {
     final argument = settings.arguments;
 
     switch (settings.name) {
-      // case Routes.onBoardingScreen:
-      //   return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
+      case Routes.onBoardingScreen:
+        return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
 
       //   //loginScreen
       // case Routes.loginScreen:
