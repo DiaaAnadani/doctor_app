@@ -1,7 +1,11 @@
+import 'package:doctor_app/core/di/dependency_injection.dart';
 import 'package:doctor_app/core/routing/routes.dart';
+import 'package:doctor_app/features/home/logic/cubit/login_cubit.dart';
 import 'package:doctor_app/features/home/ui/home_screen.dart';
+import 'package:doctor_app/features/login/ui/login_screen.dart';
 import 'package:doctor_app/features/onboarding/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 
 class AppRouter {
@@ -12,13 +16,13 @@ class AppRouter {
       case Routes.onBoardingScreen:
         return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
 
-      //   //loginScreen
-      // case Routes.loginScreen:
-      //   return MaterialPageRoute(
-      //       builder: (_) => BlocProvider(
-      //             create: (context) => getIt<LoginCubit>(),
-      //             child: const LogInScreen(),
-      //           ));
+        //loginScreen
+      case Routes.loginScreen:
+        return MaterialPageRoute(
+            builder: (_) => BlocProvider(
+                  create: (context) => getIt<LoginCubit>(),
+                  child: const LogInScreen(),
+                ));
 
       //    //signUpScreen
       // case Routes.signUpScreen:
