@@ -5,9 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() async{
-   setupGetIt();
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
+  setupGetIt();
   await ScreenUtil.ensureScreenSize();
-
-  runApp( DocApp(appRouter: AppRouter(),));
+  runApp(DocApp(
+    appRouter: AppRouter(),
+  ));
 }
-
