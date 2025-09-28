@@ -1,5 +1,4 @@
 import 'package:json_annotation/json_annotation.dart';
-//   flutter pub run build_runner build String? message;
 part 'api_error_model.g.dart';
 
 @JsonSerializable()

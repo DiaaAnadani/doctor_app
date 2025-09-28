@@ -1,3 +1,4 @@
+import 'package:doctor_app/features/home/ui/widgets/home_top_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -10,8 +11,18 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Text("home"),
+    return  Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(child: Container(
+        //to give column full width
+        width: double.infinity,
+        margin: EdgeInsets.fromLTRB(20, 16, 20, 28),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+          const HomeTopBar(),
+          ],
+        ),),)
     );
   }
 }

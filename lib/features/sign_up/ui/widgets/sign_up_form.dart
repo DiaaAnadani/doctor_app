@@ -1,5 +1,3 @@
-
-
 import 'package:doctor_app/core/helpers/app_regex.dart';
 import 'package:doctor_app/core/helpers/spacing.dart';
 import 'package:doctor_app/core/widgets/app_text_form_field.dart';

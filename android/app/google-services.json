@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "939242643928",
-    "project_id": "doactor-app",
-    "storage_bucket": "doactor-app.firebasestorage.app"
+    "project_number": "1064261187628",
+    "project_id": "doctor-app-1a254",
+    "storage_bucket": "doctor-app-1a254.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:939242643928:android:1ca35e7f21ab09952492ad",
+        "mobilesdk_app_id": "1:1064261187628:android:ec7df06bad48f0d66a3989",
         "android_client_info": {
           "package_name": "com.example.doctor_app"
         }
@@ -15,7 +15,45 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC8LWCBz0zeUd3gS6eYZwO8D0CAqnts_Ug"
+          "current_key": "AIzaSyCFnD5VcXo3VuqU4cc4kMM4ZvdUs2CGkGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064261187628:android:b8d565ddca7cd6536a3989",
+        "android_client_info": {
+          "package_name": "com.example.doctor_app.production"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFnD5VcXo3VuqU4cc4kMM4ZvdUs2CGkGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064261187628:android:770c13b053729be46a3989",
+        "android_client_info": {
+          "package_name": "com.example.doctor_app.staging"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFnD5VcXo3VuqU4cc4kMM4ZvdUs2CGkGA"
         }
       ],
       "services": {

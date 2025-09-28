@@ -9,13 +9,3 @@ abstract class ApiResult<T> with _$ApiResult<T> {
 }
 
 
-// import 'package:dartz/dartz.dart';
-
-// Future<Either<String, int>> divideAsync(int a, int b) async {
-//   await Future.delayed(Duration(seconds: 1)); // محاكاة عملية غير متزامنة
-//   if (b == 0) {
-//     return Left('Cannot divide by zero');
-//   } else {
-//     return Right(a ~/ b);
-//   }
-// }
