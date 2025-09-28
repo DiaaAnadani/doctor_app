@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "939242643928",
+    "project_id": "doactor-app",
+    "storage_bucket": "doactor-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939242643928:android:1ca35e7f21ab09952492ad",
+        "android_client_info": {
+          "package_name": "com.example.doctor_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8LWCBz0zeUd3gS6eYZwO8D0CAqnts_Ug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
