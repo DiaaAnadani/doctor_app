@@ -2,8 +2,8 @@ import 'package:doctor_app/core/helpers/extensions.dart';
 import 'package:doctor_app/core/routing/routes.dart';
 import 'package:doctor_app/core/theming/colors.dart';
 import 'package:doctor_app/core/theming/font_text_styles.dart';
-import 'package:doctor_app/features/home/logic/cubit/login_cubit.dart';
-import 'package:doctor_app/features/home/logic/cubit/login_state.dart';
+import 'package:doctor_app/features/login/logic/cubit/login_cubit.dart';
+import 'package:doctor_app/features/login/logic/cubit/login_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

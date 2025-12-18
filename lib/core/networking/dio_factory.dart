@@ -10,10 +10,17 @@ class DioFactory {
         ..options.connectTimeout = timeOut
         ..options.receiveTimeout = timeOut;
       addDioInterceptors();
+      addDioHeaders();
       return dio!;
     } else {
       return dio!;
     }
+  }
+  static void addDioHeaders() {
+    dio?.options.headers = {
+      'Authorization': 'application/json',
+      'Accept': 'application/json',
+    };
   }
 
   static void addDioInterceptors() {
