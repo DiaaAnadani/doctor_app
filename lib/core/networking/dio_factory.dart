@@ -1,4 +1,6 @@
 import 'package:dio/dio.dart';
+import 'package:doctor_app/core/helpers/constants_shared_keys.dart';
+import 'package:doctor_app/core/helpers/shared_preference.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 class DioFactory {
   DioFactory._();
@@ -16,13 +18,19 @@ class DioFactory {
       return dio!;
     }
   }
-  static void addDioHeaders() {
+  static void addDioHeaders() async{
     dio?.options.headers = {
-      'Authorization': 'application/json',
+      'Authorization': 'Bearer ${await SharedPrefHelper.getString(ConstantsSharedKeys.userToken)}',
       'Accept': 'application/json',
     };
   }
-
+static void 
+setTokenAfterLogin(String token) {
+    dio?.options.headers = {
+      'Authorization': 'Bearer $token',
+    };
+  }
+      
   static void addDioInterceptors() {
     dio?.interceptors.add(PrettyDioLogger(
         requestBody: true, 

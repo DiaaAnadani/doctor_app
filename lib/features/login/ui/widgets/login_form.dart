@@ -58,8 +58,8 @@ class _EmailAndPasswordFormState extends State<EmailAndPasswordForm> {
             validator: (value) {
               if (value == null ||
                   value.isEmpty ||
-                  AppRegex.isEmailValid(value)) {
-                return "Please enter a valid email";
+                  !AppRegex.isEmailValid(value)) {
+                return "Please enter a valid dao email";
               }
             },
             controller: context.read<LoginCubit>().emailControllerCubit,
